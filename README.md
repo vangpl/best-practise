@@ -11,7 +11,7 @@
 $strUserName ="stiandalen";
 $nUserId = 10;
 $arrUsers = array();
-´´
+```
   
 ##Variabelsjekk
 ⁃ Alltid sjekk variabler før bruk.
