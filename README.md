@@ -92,7 +92,7 @@ $.ajax({
 ```
 
 ##Funksjoner / Metoder
-- Forsøke så langt som mulig at de aldri blir lengre enn en skjermhøyde. Da bør det være mulig å refaktorere.
+- Forsøke så langt som mulig at de aldri blir lengre enn en skjermhøyde (ikke «Johnny-skjerm»-høyde). Da bør det være mulig å refaktorere.
 - Minimere antallet parametre som sendes med i funksjonskallet.
 
 ##Kommentarer
