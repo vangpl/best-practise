@@ -2,9 +2,9 @@
 #Kodestandard Og Refaktorering
 
 ##Variabler
-⁃ Alltid engelsk.
-⁃ Hungarian Notation ( https://en.wikipedia.org/wiki/Hungarian_notation )
-⁃ Beskrive hva den faktisk inneholder. Ikke $test = “foo”;
+- Alltid engelsk.
+- [Hungarian Notation](https://en.wikipedia.org/wiki/Hungarian_notation)
+- Beskrive hva den faktisk inneholder. Ikke `$test = "foo"`;
 
 ###Eksempler :
 ```php
@@ -14,8 +14,8 @@ $arrUsers = array();
 ```
   
 ##Variabelsjekk
-⁃ Alltid sjekk variabler før bruk.
-⁃ Spesielt viktig i JS. Der må det først sjekkes på om typeof !== 'undefined'
+- Alltid sjekk variabler før bruk.
+- Spesielt viktig i javascript. Der må det først sjekkes på om `typeof !== 'undefined'`
 
 ###Eksempler :
 ```php
@@ -38,17 +38,17 @@ if(is_array($arrUsers)) {
 ```
 
 ##Refaktorering
-⁃ Om man ser at ny kode er tilnærmet lik en annen kode som er brukt. Lag en funksjon!
-⁃ Kan funksjonen brukes av andre klasser / controllere / bundler. Lag en ny klasse slik at koden er tilgjengelig i alle klasser som den trengs.
+- Om man ser at ny kode er tilnærmet lik en annen kode som er brukt. Lag en funksjon!
+- Kan funksjonen brukes av andre klasser / controllere / bundler. Lag en ny klasse slik at koden er tilgjengelig i alle klasser som den trengs.
 
-Eksempler : Filer fra bestillkatalogcontroller.php
+Eksempler : Filer fra `bestillkatalogcontroller.php`
 
 ##ReturnVerdier til et ajax-kall
-⁃ Standarisere returverdi fra ajaxkall-
+- Standarisere returverdi fra ajaxkall
 - Bør inneholde en suksess-variabel som er true dersom ingenting feiler.
-⁃ Bør inneholde en feilmelding dersom noe feiler.
-⁃ Bør inneholde en suksess-melding dersom det er aktuelt.
-⁃ Kan inneholde data i retur.
+- Bør inneholde en feilmelding dersom noe feiler.
+- Bør inneholde en suksess-melding dersom det er aktuelt.
+- Kan inneholde data i retur.
 
 ###Eksempel på php-fil i ez.
 
@@ -89,11 +89,11 @@ $.ajax({
 ```
 
 ##Funksjoner / Metoder
-⁃ Forsøke så langt som mulig at de aldri blir lengre enn en skjermhøyde. Da bør det være mulig å refaktorere.
-⁃ Minimere antallet parametre som sendes med i funksjonskallet.
+- Forsøke så langt som mulig at de aldri blir lengre enn en skjermhøyde. Da bør det være mulig å refaktorere.
+- Minimere antallet parametre som sendes med i funksjonskallet.
 
 ##Kommentarer
-⁃ Kommenter koden. Selvom det er innlysende for den som har skrevet den behøver det ikke være det for nestemann som skal se på den.
+- Kommenter koden. Selvom det er innlysende for den som har skrevet den behøver det ikke være det for nestemann som skal se på den.
 
 ##Logging
-⁃ Logging av kristiske events i en egen logifle.
+- Logging av kristiske events i en egen logifle.
